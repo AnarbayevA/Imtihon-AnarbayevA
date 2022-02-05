@@ -1,3 +1,215 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    z-index: 9999;
+
+    &__container {
+        padding-top: 22px;
+        padding-bottom: 21px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__left-side {
+        display: flex;
+        align-items: center;
+    }
+
+	&__button {
+        display: none;
+	}
+
+	&__button-image {
+        width: 19.69px;
+        height: 16px;
+	}
+
+
+
+    &__logo-link {
+        margin-right: 58.18px;
+    }
+    
+    &__logo {
+        vertical-align: middle;
+        width: 107.82px;
+        height: 28.56px;
+        
+    }
+    
+    &__nav {
+    }
+    
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    &__item {
+        
+    }
+    &__item + &__item {
+        margin-left: 32px;
+    }
+    
+    &__nav-link {
+        font-family: 'Space Mono';
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 25px;
+        color: $dimgrey;
+        text-transform: capitalize;
+    }
+
+    &__nav-link:hover {
+        color: $yellow;
+    }
+}
+
+@media only screen and (max-width:1162px) {
+    .header{
+
+        &__container{
+            padding-right: 40px;
+            padding-left: 39px;
+        }
+
+        
+    }
+    
+}
+
+@media only screen and (max-width:719px) {
+    .header{
+
+        &__container{
+            
+        }
+
+        &__wrapper{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        &__left-side{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        &__logo-link{
+            margin: 0;
+            margin-bottom: 20px;
+        }
+
+        
+    }
+    
+}
+
+@media only screen and (max-width:375px) {
+    .header {
+
+		&__container {
+            padding: 22px 32px;
+		}
+
+		&__wrapper {
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border: 2px solid black;
+		}
+
+		&__left-side {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0;
+		}
+
+        &__button::before {
+            content: "";
+            position: absolute;
+            display: inline-block;
+            border: none;
+            width: 19.69;
+            height: 16px;
+        }
+    
+        &__button-image {
+            
+            vertical-align: middle;
+            width: 19.69;
+            height: 16px;
+            right: 20px;
+        }
+
+		&__logo-link {
+            margin: 0;
+		}
+
+		&__logo {
+            width: 75.5px;
+            height: 20px;
+		}
+
+		&__nav {
+            display: none;
+		}
+
+		&__list {
+		}
+
+		&__item {
+		}
+
+		&__nav-link {
+		}
+
+        .button{
+            display: none;
+        }
+}
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width:1350px) {
     .header{
 
