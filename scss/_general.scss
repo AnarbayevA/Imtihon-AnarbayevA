@@ -12,7 +12,7 @@ body{
     flex-direction: column;
     margin: 0;
     padding: 0;
-    font-family: 'Jost', sans-serif;
+    font-family: 'Space Mono',  'Lexend Deca', 'sans-serif','monospace' ;
 }
 
 main{
@@ -20,38 +20,39 @@ main{
 }
 
 h1{
-    // font-family: Jost;
-    // font-style: normal;
-    // font-weight: 500;
-    // font-size: 48px;
-    // line-height: 48px;
+    font-family: Space Mono;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: #495567;
 }
 
 h2{
-    // font-family: Jost;
-    // font-style: normal;
-    // font-weight: 500;
-    // font-size: 40px;
-    // line-height: 48px;
-    // letter-spacing: 2px;
+    font-family: Space Mono;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #495567;
 }
 
 h3{
-    // font-family: Jost;
-    // font-style: normal;
-    // font-weight: 500;
-    // font-size: 20px;
-    // line-height: 26px;
-    // letter-spacing: 5px;
-    // text-transform: uppercase; 
+    font-family: Space Mono;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1.78571px;
+    color: #495567; 
 }
 
 h4{
-    // font-family: Jost;
-    // font-weight: 500;
-    // font-size: 16px;
-    // line-height: 26px;
-    // opacity: 0.5;
+    font-family: Space Mono;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: #495567;
 }
 
 h1, h2, h3, h4, h5, h6, p{
@@ -60,11 +61,12 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 .text{
-    // font-family: Jost;
-    // font-style: normal;
-    // font-weight: normal;
-    // font-size: 16px;
-    // line-height: 26px;
+    font-family: Lexend Deca;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #495567;
 }
 
 a{

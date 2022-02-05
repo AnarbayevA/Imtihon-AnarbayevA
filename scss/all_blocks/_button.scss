@@ -1,0 +1,14 @@
+.button{
+    display: inline-block;
+    max-width: 195px;
+    min-height: 53px;
+    min-width: 180px;
+    background-color: $yellow;
+    border: none;
+}
+
+.button:hover{
+    box-shadow: inset 0 0 0 3px $yellow;
+    background-color: #FFFFFF;
+    color: $yellow
+}
