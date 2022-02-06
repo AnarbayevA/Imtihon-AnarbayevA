@@ -1,0 +1,220 @@
+.advantages {
+    margin-bottom: 200px;
+    overflow: hidden;
+    
+    &__container {
+    }
+    
+    &__list {
+    }
+    
+    &__item {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__item:nth-child(2n) &__wrapper{
+        order: -1;
+    }
+    
+    &__item:not(:last-child) {
+        margin-bottom: 200px;
+    }
+    
+    &__inner {
+        position: relative;
+    }
+    
+    &__inner::before {
+        content: "";
+        position: absolute;
+        background-image: url(./../../images/advantages-arrow-right.svg);
+        width: 740px;
+        height: 150px;
+        top: 0;
+        left: 0;
+        transform: translateX(-550px);
+    }
+
+    
+    &__inner::after {
+        content: "";
+        position: absolute;
+        width: 445px;
+        height: 445px;
+        background-color: $lightgrey;
+        border-radius: 50%;
+        top: 0;
+        left: 0;
+        transform: translateX(-509px);
+        z-index: -1;
+    }
+    
+    &__inner-left{
+        position: relative;
+        margin-bottom: 64px;
+    }
+
+    &__inner-left::before {
+        content: "";
+        position: absolute;
+        background-image: url(./../images/advantages-arrow-left.svg);
+        width: 740px;
+        height: 150px;
+        top: 0;
+        right: 0;
+        transform: translate(550px, 75px);
+    }
+
+    &__inner-left::after {
+        content: "";
+        position: absolute;
+        width: 445px;
+        height: 445px;
+        background-color: $lightgrey;
+        border-radius: 50%;
+        top: 0;
+        left: 0;
+        transform: translateX(509px);
+        z-index: -1;
+    }
+    
+    
+    &__image {
+        width: 445px;
+        height: 445px;
+        border-radius: 50%;
+    }
+    
+    &__wrapper{
+        max-width: 445px;
+        
+    }
+    
+    &__heading {
+        margin-bottom: 24px;
+        color: $darknavy;
+    }
+    
+    &__text {
+        margin-bottom: 40px;
+        color: $dimgrey;
+    }
+}
+
+@media only screen and(max-width:1250px){
+    .advantages {
+        
+        &__container {
+            
+        }
+        
+        &__list {
+        }
+        
+        &__item {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        &__item-column{
+            flex-direction: column-reverse;
+        }
+        
+        &__inner {
+            margin-bottom: 64px;
+        }
+        
+        &__image {
+        }
+        
+        &__wrapper {
+        }
+        
+        &__heading {
+            margin-bottom: 40px;
+            font-family: Space Mono;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 48px;
+            text-align: center;
+            letter-spacing: -2.14286px;
+        }
+        
+        &__text {
+            font-family: Lexend Deca;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    }
+    
+}
+
+@media only screen and(max-width:768px){
+    .advantages{
+        &__heading {
+            max-width: 457px;
+            margin-bottom: 40px;
+        }
+        
+        &__text {
+            max-width: 573px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media only screen and(max-width:500px){
+    .advantages{
+        &__container{
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+
+        &__inner-left{
+            margin-bottom: 56px;
+        }
+        
+        &__heading {
+            max-width: 311px;
+            font-size: 32px;
+            line-height: 32px;
+            text-align: center;
+            letter-spacing: -1.42857px;
+        }
+        
+        &__text {
+            max-width: 311px;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+        }
+        
+        &__inner::before{
+            top: 0;
+            left: 0;
+            transform: translate(-525px);
+        }
+
+        &__inner-left::before{
+            top: 0;
+            left: 0;
+            transform: translate(100px, -5px);
+        }
+        
+        &__image{
+            width: 311px;
+            height: 311px;
+        }
+    }
+}
+

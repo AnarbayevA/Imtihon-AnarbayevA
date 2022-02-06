@@ -123,6 +123,13 @@
             padding-right: 32px;
             padding-left: 32px;
         }
+
+        &__inner::before {
+            top: 0;
+            left: 0;
+            transform: translate(-128px, 200px );
+            
+        }
         
         &__image{
             max-width: 311px;

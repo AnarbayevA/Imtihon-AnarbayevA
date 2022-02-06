@@ -1,0 +1,282 @@
+.footer {
+    
+    &__container {
+        padding-top: 35px;
+        padding-bottom: 32.4px;
+        background-color: #333A44;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left-side {
+        max-width: 417px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo-link {
+    }
+
+    &__logo {
+        vertical-align: middle;
+    }
+
+    &__nav {
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+    }
+
+    &__item {
+    }
+
+    &__item:not(:last-child){
+        margin-right: 32px;
+    }
+
+    &__nav-link {
+        font-family: Space Mono;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 25px;
+        color: $dimgrey;
+    }
+
+    &__nav-link:hover {
+        color: $yellow;
+    }
+
+    &__list-image {
+        max-width: 120px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__item-image {
+    }
+    
+    &__item-image:not(:last-child) {
+        margin-right: 24px;
+    }
+
+    &__item-link {
+        
+    }
+
+    &__image:hover path {
+        fill: $lightgrey;
+    }
+}
+
+@media only screen and (max-width:930px){
+    .footer {
+        
+        &__container {
+            padding-right: 40px;
+            padding-left: 39.6px;
+        }
+    
+        &__wrapper {
+        }
+    
+        &__left-side {
+        }
+    
+        &__logo-link {
+            
+        }
+    
+        &__logo {
+        }
+    
+        &__nav {
+        }
+    
+        &__list {
+        }
+    
+        &__item {
+        }
+    
+        &__item:not(:last-child){
+        }
+    
+        &__nav-link {
+        }
+        
+        &__nav-link:hover {
+        }
+    
+        &__list-image {
+        }
+        
+        &__item-image {
+        }
+        
+        &__item-image:not(:last-child) {
+        }
+    
+        &__item-link {
+            
+        }
+    
+        &__image:hover path {
+        }
+    }
+}
+
+
+@media only screen and (max-width:680px){
+    .footer {
+    
+        &__container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+    
+        &__wrapper {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        &__left-side {
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+        &__logo-link {
+            margin-bottom: 41.4px;
+            
+        }
+    
+        &__logo {
+        }
+    
+        &__nav {
+        }
+    
+        &__list {
+            margin-bottom: 87px;
+        }
+    
+        &__item {
+        }
+    
+        &__item:not(:last-child){
+        }
+    
+        &__nav-link {
+        }
+    
+        &__nav-link:hover {
+        }
+    
+        &__list-image {
+            align-items: center;
+            justify-content: center;
+        }
+    
+        &__item-image {
+        }
+        
+        &__item-image:not(:last-child) {
+        }
+    
+        &__item-link {
+            
+        }
+    
+        &__image:hover path {
+        }
+    }
+}
+
+@media only screen and (max-width:375px){
+    .footer {
+    
+        &__container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 64px;
+            
+        }
+    
+        &__wrapper {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        &__left-side {
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+        &__logo-link {
+            margin-bottom: 41.4px;
+            
+        }
+    
+        &__logo {
+        }
+    
+        &__nav {
+        }
+    
+        &__list {
+            margin-bottom: 87px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        &__item:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    
+        &__item:not(:last-child){
+            margin-right: 0;
+        }
+    
+        &__nav-link {
+        }
+    
+        &__nav-link:hover {
+        }
+    
+        &__list-image {
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 92.5px;
+        }
+    
+        &__item-image {
+        }
+        
+        &__item-image:not(:last-child) {
+        }
+    
+        &__item-link {
+            
+            
+        }
+    
+        &__image:hover path {
+        }
+    }
+}

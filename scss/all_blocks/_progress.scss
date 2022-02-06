@@ -1,8 +1,6 @@
 .progress {
     margin-bottom: 200px;
-    // padding-top: 122px;
     margin-bottom: 200px;
-    
 
     &__container {
         overflow: hidden;
@@ -42,9 +40,6 @@
         margin-bottom: 40px;
     }
 
-    &__wrapper {
-    }
-
     &__heading {
         margin-bottom: 27px;
         color: $darknavy;
@@ -62,9 +57,6 @@
 
 @media only screen and (max-width:1090px) {
     .progress {
-
-		&__container {
-		}
 
 		&__list {
             flex-direction: column;
@@ -85,7 +77,6 @@
             color: #939CAA;
         }
 
-		
 }
 }
 
