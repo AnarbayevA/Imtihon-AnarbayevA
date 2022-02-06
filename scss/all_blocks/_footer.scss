@@ -19,23 +19,14 @@
         justify-content: space-between;
     }
 
-    &__logo-link {
-    }
-
     &__logo {
         vertical-align: middle;
-    }
-
-    &__nav {
     }
 
     &__list {
         display: flex;
         align-items: center;
         text-transform: capitalize;
-    }
-
-    &__item {
     }
 
     &__item:not(:last-child){
@@ -62,16 +53,9 @@
         align-items: center;
         justify-content: space-between;
     }
-
-    &__item-image {
-    }
     
     &__item-image:not(:last-child) {
         margin-right: 24px;
-    }
-
-    &__item-link {
-        
     }
 
     &__image:hover path {
@@ -86,53 +70,6 @@
             padding-right: 40px;
             padding-left: 39.6px;
         }
-    
-        &__wrapper {
-        }
-    
-        &__left-side {
-        }
-    
-        &__logo-link {
-            
-        }
-    
-        &__logo {
-        }
-    
-        &__nav {
-        }
-    
-        &__list {
-        }
-    
-        &__item {
-        }
-    
-        &__item:not(:last-child){
-        }
-    
-        &__nav-link {
-        }
-        
-        &__nav-link:hover {
-        }
-    
-        &__list-image {
-        }
-        
-        &__item-image {
-        }
-        
-        &__item-image:not(:last-child) {
-        }
-    
-        &__item-link {
-            
-        }
-    
-        &__image:hover path {
-        }
     }
 }
 
@@ -144,7 +81,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            
         }
     
         &__wrapper {
@@ -160,47 +96,15 @@
     
         &__logo-link {
             margin-bottom: 41.4px;
-            
-        }
-    
-        &__logo {
-        }
-    
-        &__nav {
         }
     
         &__list {
             margin-bottom: 87px;
         }
     
-        &__item {
-        }
-    
-        &__item:not(:last-child){
-        }
-    
-        &__nav-link {
-        }
-    
-        &__nav-link:hover {
-        }
-    
         &__list-image {
             align-items: center;
             justify-content: center;
-        }
-    
-        &__item-image {
-        }
-        
-        &__item-image:not(:last-child) {
-        }
-    
-        &__item-link {
-            
-        }
-    
-        &__image:hover path {
         }
     }
 }
@@ -213,7 +117,6 @@
             align-items: center;
             justify-content: center;
             padding-top: 64px;
-            
         }
     
         &__wrapper {
@@ -229,13 +132,6 @@
     
         &__logo-link {
             margin-bottom: 41.4px;
-            
-        }
-    
-        &__logo {
-        }
-    
-        &__nav {
         }
     
         &__list {
@@ -253,30 +149,10 @@
             margin-right: 0;
         }
     
-        &__nav-link {
-        }
-    
-        &__nav-link:hover {
-        }
-    
         &__list-image {
             align-items: center;
             justify-content: center;
             margin-bottom: 92.5px;
-        }
-    
-        &__item-image {
-        }
-        
-        &__item-image:not(:last-child) {
-        }
-    
-        &__item-link {
-            
-            
-        }
-    
-        &__image:hover path {
         }
     }
 }
