@@ -1,0 +1,173 @@
+.rounds {
+    margin-bottom: 160px;
+    overflow: hidden;
+    
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    
+    &__wrapper {
+        max-width: 445px;
+        width: 100%;
+        
+    }
+    
+    &__heading {
+        margin-bottom: 24px;
+        color: $darknavy;
+        
+    }
+    
+    &__text {
+        margin-bottom: 40px;
+        color: $dimgrey;
+    }
+    
+    &__inner {
+        position: relative;
+        overflow: visible;
+        max-width: 445px;
+    }
+    
+    &__inner::before {
+        content: "";
+        position: absolute;
+        background-image: url(./../images/rounds-arrow.svg);
+        width: 740px;
+        height: 150px;
+        top: 0;
+        left: 0;
+        transform: translate(-128px, 300px );
+        
+    }
+    
+    &__inner::after {
+        content: "";
+        position: absolute;
+        width: 445px;
+        height: 445px;
+        background-color: $lightgrey;
+        border-radius: 50%;
+        top: 0;
+        left: 0;
+        transform: translateX(509px);
+        z-index: -1;
+        
+    }
+    
+    
+    &__image {
+        max-width: 445px;
+        max-height: 445px;
+        border-radius: 50%;
+        vertical-align: middle;
+        
+    }
+}
+
+@media only screen and (max-width:1250px){
+    .rounds{
+        &__container{
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        &__image{
+            margin-bottom: 56px;
+        }
+        
+        &__wrapper{
+            text-align: center;
+        }
+        
+        &__heading{
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width:768px){
+    .rounds{
+        &__container{
+            padding-left: 97px;
+            padding-right: 98px;
+        }
+        
+        &__wrapper{
+            max-width: 600px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        &__heading{
+            max-width: 457px;
+        }
+        
+        &__text{
+            max-width: 573px;
+        }
+    }
+    
+    
+}
+
+@media only screen and (max-width:630px){
+    .rounds{
+        &__container{
+            padding-right: 32px;
+            padding-left: 32px;
+        }
+        
+        &__image{
+            max-width: 311px;
+            max-height: 311px;
+        }
+    }
+}
+
+
+@media only screen and (max-width:375px){
+    .rounds{
+        &__container{
+            padding-left: 0;
+            padding-right: 0;
+        }
+        
+        &__inner::before{
+            top: 0;
+            right: 0;
+            transform: translate(-15px, 165px);
+        }
+        
+        &__wrapper{
+            max-width: 311px;
+        }
+        
+        &__heading{
+            font-family: Space Mono;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 32px;
+            text-align: center;
+            letter-spacing: -1.42857px;
+        }
+        
+        &__text{
+            font-family: Lexend Deca;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+        }
+    }
+    
+    
+}
